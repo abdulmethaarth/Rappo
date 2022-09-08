@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.affinity.rappo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_center_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash_center_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SingleHistoryDtlsActivity"></activity>
+        <activity android:name=".ui_activity.MachineStatus2Activity" />
+        <activity android:name=".ui_activity.MachineStatusActivity" />
+        <activity android:name=".ui_activity.SuccessActivity" />
+        <activity android:name=".ui_activity.PurposeOfVisitActivity" />
+        <activity android:name=".ui_activity.Fault_and_RepairActivity" />
+        <activity android:name=".ui_activity.CreateActivity" />
+        <activity android:name=".ui_activity.HistoryActivity" />
+        <activity android:name=".ui_activity.PinEntryActivity" />
+        <activity android:name=".ui_activity.MainActivity" />
+        <activity android:name=".ui_activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

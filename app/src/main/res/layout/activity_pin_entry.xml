@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_activity.PinEntryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/screen_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/logowhite"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter PIN:"
+                android:textColor="#DCFFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25dp"/>
+
+            <!--<com.alimuzaffar.lib.pin.PinEntryEditText
+                android:layout_height="50dp"
+                android:layout_width="250dp"
+                android:id="@+id/otp"
+                android:textSize="20dp"
+                android:maxLength="4"
+                android:inputType="number"
+                app:pinBackgroundDrawable="@drawable/rounded_border_pin"/>-->
+
+
+            <LinearLayout
+                android:id="@+id/layout_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="90sp"
+                android:layout_below="@+id/layout_header"
+                android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextone"
+                android:layout_width="40sp"
+                android:layout_height="42sp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:background="@drawable/rounded_border_pin"
+                android:nextFocusRight="@+id/editText_two">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editTexttwo"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/rounded_border_pin"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/editTextthree"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_border_pin"
+            android:maxLength="1"/>
+
+        <EditText
+            android:id="@+id/editTextfour"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_border_pin"
+            android:maxLength="1"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/continue_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_border_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
